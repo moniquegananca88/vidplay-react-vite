@@ -86,7 +86,7 @@ function Movies() {
             <p>{bannerMovie.overview}</p>
 
             <ContainerButtons>
-  <Button red onClick={() => navigate(`/detalhe/${movie.id}`)}>
+  <Button red onClick={() => navigate(`/detalhe/${bannerMovie.id}`)}>
     Assista Agora
   </Button>
 

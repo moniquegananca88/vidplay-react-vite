@@ -60,7 +60,7 @@ export const Container = styled.div`
 
 export const Cover = styled.div`
   padding: 30px;
-  margin-top: -260px;
+  margin-top: -160px;
   display: flex;
   align-items: flex-start;
   height: 100%;
@@ -68,7 +68,7 @@ export const Cover = styled.div`
 
   img {
     width: 400px;
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     animation: ${scale} 0.5s linear;
   }
@@ -94,7 +94,7 @@ export const Cover = styled.div`
 
 export const Info = styled.div`
   padding: 20px;
-  margin-top: -280px;
+  margin-top: -130px;
   width: 50%;
   z-index: 99;
   display: flex;

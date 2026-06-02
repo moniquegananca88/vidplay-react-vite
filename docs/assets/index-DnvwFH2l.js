@@ -389,12 +389,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
 `,If=R.div`
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    height: 100%;
-    max-width:1500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  max-width: 1500px;
+  padding-top: 120px;
+  box-sizing: border-box;
+     
+    
 
       @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -413,10 +416,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       
 `,Lf=R.div`
   z-index: 2;
-  padding: 120px 20px 20px;
+  padding: 20px;
   width: 50%;
   max-height: 80vh;
   overflow: hidden;
+
   h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -477,6 +481,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     width: 360px;
     border-radius: 30px;
     animation: ${Pf} 0.5s linear;
+    margin: 0 80px 0 0;
+    
   }
     
   @media (max-width: 900px) {
@@ -653,7 +659,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     flex-direction: column;
     align-items: center;
   }
-`;function Xf(){let[e,t]=(0,S.useState)([]),[n,r]=(0,S.useState)([]),[i,a]=(0,S.useState)(null),[o,s]=(0,S.useState)(!1),[c,l]=(0,S.useState)([]),[u,d]=(0,S.useState)(``),f=ut();return(0,S.useEffect)(()=>{async function e(){let[e,n,i]=await Promise.all([Ml(),Nl(),G()]),o=await zl(e[0].id),s=(await Ul(e[0].id))?.find(e=>e.iso_3166_1===`BR`)?.release_dates?.find(e=>e.certification)?.certification||`L`;t(e),r(n),a(o),d(s),l(i)}e()},[]),(0,X.jsxs)(Gf,{children:[i&&(0,X.jsxs)(Kf,{$img:kf(i.backdrop_path),children:[o&&(0,X.jsx)(Uf,{movieId:i.id,setShowModal:s,type:`movie`}),(0,X.jsxs)(qf,{children:[(0,X.jsx)(`h1`,{children:i.title}),(0,X.jsxs)(`div`,{className:`movie-details`,children:[(0,X.jsxs)(`span`,{children:[`+ `,u]}),i.genres?.map(e=>(0,X.jsx)(`small`,{children:e.name},e.id))]}),(0,X.jsx)(`p`,{children:i.overview}),(0,X.jsxs)(Yf,{children:[(0,X.jsx)($l,{red:!0,onClick:()=>f(`/detalhe/${movie.id}`),children:`Assista Agora`}),(0,X.jsx)($l,{onClick:()=>s(!0),children:`Assista o Trailer`})]})]})]}),(0,X.jsx)(Jf,{children:(0,X.jsx)(Nf,{info:c,title:`Filmes Recentes`,type:`movie`})}),(0,X.jsx)(Jf,{children:(0,X.jsx)(Nf,{info:e,title:`Filmes Populares`,type:`movie`})}),(0,X.jsx)(Jf,{children:(0,X.jsx)(Nf,{info:n,title:`Filmes Mais Bem Avaliados`,type:`movie`})})]})}var Zf=R.div`
+`;function Xf(){let[e,t]=(0,S.useState)([]),[n,r]=(0,S.useState)([]),[i,a]=(0,S.useState)(null),[o,s]=(0,S.useState)(!1),[c,l]=(0,S.useState)([]),[u,d]=(0,S.useState)(``),f=ut();return(0,S.useEffect)(()=>{async function e(){let[e,n,i]=await Promise.all([Ml(),Nl(),G()]),o=await zl(e[0].id),s=(await Ul(e[0].id))?.find(e=>e.iso_3166_1===`BR`)?.release_dates?.find(e=>e.certification)?.certification||`L`;t(e),r(n),a(o),d(s),l(i)}e()},[]),(0,X.jsxs)(Gf,{children:[i&&(0,X.jsxs)(Kf,{$img:kf(i.backdrop_path),children:[o&&(0,X.jsx)(Uf,{movieId:i.id,setShowModal:s,type:`movie`}),(0,X.jsxs)(qf,{children:[(0,X.jsx)(`h1`,{children:i.title}),(0,X.jsxs)(`div`,{className:`movie-details`,children:[(0,X.jsxs)(`span`,{children:[`+ `,u]}),i.genres?.map(e=>(0,X.jsx)(`small`,{children:e.name},e.id))]}),(0,X.jsx)(`p`,{children:i.overview}),(0,X.jsxs)(Yf,{children:[(0,X.jsx)($l,{red:!0,onClick:()=>f(`/detalhe/${i.id}`),children:`Assista Agora`}),(0,X.jsx)($l,{onClick:()=>s(!0),children:`Assista o Trailer`})]})]})]}),(0,X.jsx)(Jf,{children:(0,X.jsx)(Nf,{info:c,title:`Filmes Recentes`,type:`movie`})}),(0,X.jsx)(Jf,{children:(0,X.jsx)(Nf,{info:e,title:`Filmes Populares`,type:`movie`})}),(0,X.jsx)(Jf,{children:(0,X.jsx)(Nf,{info:n,title:`Filmes Mais Bem Avaliados`,type:`movie`})})]})}var Zf=R.div`
   min-height: 100vh;
   background: #000;
   padding-bottom: 50px;
@@ -686,6 +692,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 `,$f=R.div`
   margin-left: 70px;
   max-width: 600px;
+  
 
   h1 {
     color: white;
@@ -820,7 +827,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 `,op=R.div`
   padding: 30px;
-  margin-top: -260px;
+  margin-top: -160px;
   display: flex;
   align-items: flex-start;
   height: 100%;
@@ -828,7 +835,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   img {
     width: 400px;
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     animation: ${rp} 0.5s linear;
   }
@@ -852,7 +859,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 `,sp=R.div`
   padding: 20px;
-  margin-top: -280px;
+  margin-top: -130px;
   width: 50%;
   z-index: 99;
   display: flex;
@@ -1059,7 +1066,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   justify-content: center;
   align-items: flex-start;
   max-width: 1500px;
-  margin: -120px auto 0;
+  margin: 0px auto 0;
   padding: 100px 80px 0;
   gap: 30px;
 
@@ -1088,10 +1095,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 900px) {
     width: 100%;
     margin-top: 0;
-    padding: 20px;
+    padding: 2cqh;
+    t
 
     img {
       width: 300px;
+      
     }
   }
 

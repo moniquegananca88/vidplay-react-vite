@@ -50,12 +50,15 @@ export const Background = styled.div`
 
 `
 export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    height: 100%;
-    max-width:1500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  max-width: 1500px;
+  padding-top: 120px;
+  box-sizing: border-box;
+     
+    
 
       @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -77,10 +80,11 @@ export const Container = styled.div`
 
 export const Info = styled.div`
   z-index: 2;
-  padding: 120px 20px 20px;
+  padding: 20px;
   width: 50%;
   max-height: 80vh;
   overflow: hidden;
+
   h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -143,6 +147,8 @@ export const Poster = styled.div`
     width: 360px;
     border-radius: 30px;
     animation: ${scale} 0.5s linear;
+    margin: 0 80px 0 0;
+    
   }
     
   @media (max-width: 900px) {

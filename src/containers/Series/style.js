@@ -37,6 +37,7 @@ export const Banner = styled.div`
 export const Content = styled.div`
   margin-left: 70px;
   max-width: 600px;
+  
 
   h1 {
     color: white;

@@ -44,7 +44,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   max-width: 1500px;
-  margin: -120px auto 0;
+  margin: 0px auto 0;
   padding: 100px 80px 0;
   gap: 30px;
 
@@ -75,10 +75,12 @@ export const Cover = styled.div`
   @media (max-width: 900px) {
     width: 100%;
     margin-top: 0;
-    padding: 20px;
+    padding: 2cqh;
+    t
 
     img {
       width: 300px;
+      
     }
   }
 
