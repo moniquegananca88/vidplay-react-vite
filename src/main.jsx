@@ -6,7 +6,7 @@ import GlobalStyle from "./styles/globalStyles";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/vidplay-react-vite">
       <Router />
     </BrowserRouter>
     <GlobalStyle />
