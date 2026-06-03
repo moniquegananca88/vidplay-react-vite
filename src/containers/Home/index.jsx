@@ -40,8 +40,8 @@ function Home() {
           getTopPeople(),
         ]);
 
-      const movieDetails = await getMovieById(movies[1].id);
-const certifications = await getMovieCertification(movies[1].id);
+      const movieDetails = await getMovieById(movies[7].id);
+const certifications = await getMovieCertification(movies[7].id);
 
       const brazilCertification =
         certifications

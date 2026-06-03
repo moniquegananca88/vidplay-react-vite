@@ -154,6 +154,8 @@ export const Poster = styled.div`
   @media (max-width: 900px) {
     img {
       width: 280px;
+      margin:0;
+      
     }
   }
 
